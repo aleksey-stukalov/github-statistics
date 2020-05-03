@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://userInfoEdit.caption"
+        focusComponent="form"
+        messagesPack="com.company.ghstat.web.screens.userinfo">
+    <data readOnly="true">
+        <instance id="userInfoDc"
+                  class="com.company.ghstat.entity.UserInfo">
+            <view extends="_local">
+                <property name="login"/>
+                <property name="avatarUrl"/>
+                <property name="email"/>
+                <property name="company"/>
+            </view>
+            <loader id="userInfoDl"/>
+        </instance>
+    </data>
+    <dialogMode height="AUTO"
+                width="AUTO"
+                modal="true"
+                forceDialog="true"/>
+    <layout expand="editActions" spacing="true">
+        <hbox spacing="true">
+            <form id="form" dataContainer="userInfoDc" editable="false">
+                <column width="250px">
+                    <textField id="loginField" property="login"/>
+                    <textField id="emailField" property="email"/>
+                    <textField id="companyField" property="company"/>
+                </column>
+            </form>
+            <image id="avatar" scaleMode="SCALE_DOWN" width="150px"/>
+        </hbox>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+        </hbox>
+    </layout>
+</window>
