@@ -7,6 +7,12 @@ import com.haulmont.cuba.core.entity.BaseLongIdEntity;
 
 import javax.validation.constraints.NotNull;
 
+/**
+ * Represents GitHub contributor
+ *
+ * @see com.company.ghstat.core.GithubRestClient#contributors
+ * @see <a href="https://developer.github.com/v3/repos/#list-contributors">Contributors GitHub API</a>
+ */
 @NamePattern("%s|login")
 @MetaClass(name = "ghstat_Contributor")
 public class Contributor extends BaseLongIdEntity {

@@ -4,10 +4,13 @@ import com.haulmont.chile.core.annotations.MetaClass;
 import com.haulmont.chile.core.annotations.MetaProperty;
 import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.cuba.core.entity.BaseLongIdEntity;
-import com.haulmont.cuba.core.entity.HasUuid;
 
-import java.util.UUID;
-
+/**
+ * Represents GitHub repository
+ *
+ * @see com.company.ghstat.core.GithubRestClient#repos
+ * @see <a href="https://developer.github.com/v3/repos/#list-organization-repositories">Repositories GitHub API</a>
+ */
 @NamePattern("%s: ☆ %s|name,stargazersCount")
 @MetaClass(name = "ghstat_Repository")
 public class Repository extends BaseLongIdEntity {

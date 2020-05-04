@@ -4,10 +4,13 @@ import com.haulmont.chile.core.annotations.MetaClass;
 import com.haulmont.chile.core.annotations.MetaProperty;
 import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.cuba.core.entity.BaseLongIdEntity;
-import com.haulmont.cuba.core.entity.StandardEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+/**
+ * <p>Represents GitHub user</p>
+ *
+ * @see com.company.ghstat.core.GithubRestClient#userDetails
+ * @see <a href="https://developer.github.com/v3/users/#get-a-single-user">Users GitHub API</a>
+ */
 
 @NamePattern("%s|login")
 @MetaClass(name = "ghstat_UserDetails")

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
-        caption="msg://userInfoEdit.caption"
+        caption="msg://userInfoView.caption"
         focusComponent="form"
         messagesPack="com.company.ghstat.web.screens.userinfo">
     <data readOnly="true">
@@ -31,7 +31,7 @@
             <image id="avatar" scaleMode="SCALE_DOWN" width="150px"/>
         </hbox>
         <hbox id="editActions" spacing="true">
-            <button action="windowCommitAndClose"/>
+            <button id="closeBtn" caption="OK"/>
         </hbox>
     </layout>
 </window>

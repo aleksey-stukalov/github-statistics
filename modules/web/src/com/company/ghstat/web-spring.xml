@@ -11,7 +11,7 @@
         <property name="serverSelector" ref="cuba_ServerSelector"/>
         <property name="remoteServices">
             <map>
-                <entry key="ghstat_GithubStatService" value="com.company.ghstat.service.GithubInfoService"/>
+                <entry key="ghstat_GithubInfoService" value="com.company.ghstat.service.GithubInfoService"/>
             </map>
         </property>
     </bean>
