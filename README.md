@@ -44,7 +44,7 @@ the table pagination controls (5)._
     
     The `contributorsTable` table (of the contributor browse screen) has a column generator for the `login` column, 
     see `ContributorBrowse#contributorsTableLoginColumnGenerator`. The generator returns a link button that opens
-    the `ghstat_UserDetails.edit` screen when clicking.
+    the `UserInfoView` screen when clicking.
     
     ![user_details screen](screenshots/user-details-screen.png)
     

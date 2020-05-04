@@ -22,7 +22,7 @@ import java.net.URL;
  * {@link UserInfo} edit screen
  */
 
-@UiController("ghstat_UserDetails.edit")
+@UiController
 @UiDescriptor("user-info-view.xml")
 @LoadDataBeforeShow
 public class UserInfoView extends Screen {
