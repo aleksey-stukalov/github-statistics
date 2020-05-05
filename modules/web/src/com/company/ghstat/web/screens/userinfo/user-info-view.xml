@@ -6,12 +6,7 @@
     <data readOnly="true">
         <instance id="userInfoDc"
                   class="com.company.ghstat.entity.UserInfo">
-            <view extends="_local">
-                <property name="login"/>
-                <property name="avatarUrl"/>
-                <property name="email"/>
-                <property name="company"/>
-            </view>
+            <view extends="_local"/>
             <loader id="userInfoDl"/>
         </instance>
     </data>

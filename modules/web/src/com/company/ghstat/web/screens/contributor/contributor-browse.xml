@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
-        xmlns:c="http://schemas.haulmont.com/cuba/screen/jpql_condition.xsd"
         caption="msg://contributorBrowse.caption"
         focusComponent="contributorsTable"
         messagesPack="com.company.ghstat.web.screens.contributor">
     <data readOnly="true">
         <collection id="contributorsDc"
                     class="com.company.ghstat.entity.Contributor">
-            <view extends="_local">
-                <property name="login"/>
-                <property name="contributions"/>
-            </view>
+            <view extends="_local"/>
             <loader id="contributorsDl" maxResults="50"/>
         </collection>
         <collection id="reposDc" class="com.company.ghstat.entity.Repository" view="_local">
